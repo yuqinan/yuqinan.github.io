@@ -226,12 +226,23 @@ h1, h2, h3 {
   }
   
   /* Hide profile picture on very narrow screens */
+  .profile-pic {
+    display: none;
+  }
+  
+  /* Ensure text content takes full width */
+  .column.is-two-thirds {
+    flex: 1;
+    width: 100%;
+  }
+  
   .column.is-one-third {
     display: none;
   }
   
   .title.is-1 {
     font-size: 1.75rem;
+    text-align: center;
   }
   
   .simple-link {
