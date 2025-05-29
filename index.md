@@ -13,7 +13,7 @@ layout: default
           <div class="column is-two-thirds">
             <div class="bio-content mb-5">
               <p class="mb-3">Hi! I am qinan, a first-year CS Ph.D. student at Stanford. 
-               Currently, I am rotating with <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a> and <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>. My Ph.D. is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a></p>.
+               Currently, I am rotating with <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a> and <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>. My Ph.D. is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a>.</p>
 
               <p class="mb-5">My research focuses on Natural Language Processing, specifically in interpretability and trustworthiness of language models. 
               I'm interested in understanding how language models work internally and improving their capabilities and reliability.</p>
