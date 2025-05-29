@@ -1,0 +1,25 @@
+title: Qinan Yu
+email: qinanyu@stanford.edu
+description: >-
+  Qinan Yu - PhD Student in Computer Science at Stanford University - 
+  Research in Natural Language Processing, Language Model Interpretability, and Multilingual NLP
+baseurl: "" 
+url: "https://yuqinan.github.io" 
+github_username: yuqinan
+twitter_username: qinan_yu
+google_scholar: ZzQoxXcAAAAJ
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git/ 

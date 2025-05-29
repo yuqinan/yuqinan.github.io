@@ -1,0 +1,156 @@
+/* Custom styles */
+
+/* Stanford cardinal color */
+:root {
+  --stanford-cardinal: #8C1515;
+  --stanford-cardinal-light: #B83A4B;
+  --stanford-cardinal-dark: #620D0D;
+  --main-font: "Gill Sans", sans-serif;
+}
+
+/* Global font settings */
+body {
+  font-family: var(--main-font);
+}
+
+/* Add spacing to the top of the page */
+main {
+  padding-top: 1rem;
+}
+
+/* Style for the hero section */
+.hero {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+}
+
+/* Add bottom margin to section titles */
+.title {
+  margin-bottom: 1.5rem;
+  font-family: var(--main-font);
+}
+
+/* Style for the news items */
+.content ul li {
+  margin-bottom: 1.5rem;
+}
+
+.content ul li strong {
+  display: block;
+  color: var(--stanford-cardinal);
+  font-size: 0.9rem;
+}
+
+/* Footer styling */
+.footer {
+  padding: 3rem 1.5rem;
+  background-color: #fafafa;
+}
+
+/* Make sure images don't overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+a {
+  color: var(--stanford-cardinal);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--stanford-cardinal-light);
+}
+
+/* Section headings */
+h1, h2, h3 {
+  color: var(--stanford-cardinal);
+  font-family: var(--main-font);
+}
+
+/* Profile picture styling */
+.profile-pic {
+  border: 3px solid var(--stanford-cardinal);
+  max-width: 256px;
+  margin: 0 auto;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styling */
+.button.is-outlined {
+  border-color: var(--stanford-cardinal);
+  color: var(--stanford-cardinal);
+}
+
+.button.is-outlined:hover {
+  background-color: var(--stanford-cardinal);
+  color: white;
+}
+
+/* Box styling for projects */
+.box {
+  margin-bottom: 2rem;
+  border-top: 3px solid var(--stanford-cardinal);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+  margin-bottom: 1rem;
+}
+
+/* Project images */
+.box .image img {
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.box .image img:hover {
+  opacity: 0.9;
+}
+
+/* Publication styling */
+.publication {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .column.is-one-quarter {
+    text-align: center;
+  }
+  
+  .profile-pic {
+    max-width: 200px;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+/* Stanford-specific styling */
+.stanford-bg {
+  background-color: var(--stanford-cardinal);
+  color: white;
+}
+
+/* Navigation active state */
+.navbar-item.is-active {
+  background-color: #f5f5f5;
+  color: var(--stanford-cardinal);
+}
+
+/* Font overrides for Bulma elements */
+.navbar-item, .button, p, li, .content, .subtitle {
+  font-family: var(--main-font);
+} 
