@@ -62,7 +62,7 @@ layout: default
         <ul class="news-list">
           <li class="news-item mb-4">
             <div class="news-date"><strong>May 2025</strong></div>
-            <div class="news-content">Our paper <a href="https://arxiv.org/abs/2505.20809" class="paper-link" target="_blank" rel="noopener noreferrer">Improved Representation Steering for Language Models</a> is now available on arXiv.</div>
+            <div class="news-content">Our paper <a href="https://arxiv.org/abs/2505.20809" class="paper-link" target="_blank" rel="noopener noreferrer">"Improved Representation Steering for Language Models"</a> is now available on arXiv.</div>
           </li>
           <li class="news-item mb-4">
             <div class="news-date"><strong>Jan 2025</strong></div>
