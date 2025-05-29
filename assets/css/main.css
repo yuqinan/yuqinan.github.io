@@ -220,10 +220,49 @@ h1, h2, h3 {
   }
 }
 
+/* More aggressive mobile breakpoint for desktop browser simulation */
+@media screen and (max-width: 600px) {
+  /* Hide the entire profile container and show content differently */
+  .profile-container {
+    display: none !important;
+  }
+  
+  /* Show mobile content */
+  .mobile-bio-content {
+    display: block !important;
+  }
+  
+  /* Create a mobile-only layout */
+  .home .main-content {
+    padding: 1rem;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .title.is-1 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .simple-link {
+    display: block;
+    margin: 0.5rem auto;
+    width: fit-content;
+  }
+}
+
 @media screen and (max-width: 480px) {
   /* Hide the entire profile container and show content differently */
   .profile-container {
     display: none !important;
+  }
+  
+  /* Show mobile content */
+  .mobile-bio-content {
+    display: block !important;
   }
   
   /* Create a mobile-only layout */
