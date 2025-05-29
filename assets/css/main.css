@@ -11,11 +11,64 @@
 /* Global font settings */
 body {
   font-family: var(--main-font);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container stability */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Maintain aspect ratios for images */
+.profile-pic {
+  width: 100%;
+  max-width: 256px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 3px solid var(--stanford-cardinal);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Stable grid layout */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.75rem;
+}
+
+.column {
+  flex: 1;
+  padding: 0.75rem;
+  min-width: 0; /* Prevent overflow */
+}
+
+.column.is-two-thirds {
+  flex: 2;
+}
+
+.column.is-one-third {
+  flex: 1;
+  min-width: 280px;
 }
 
 /* Add spacing to the top of the page */
 main {
   padding-top: 1rem;
+  min-height: calc(100vh - 200px); /* Ensure minimum height */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Style for the hero section */
@@ -45,12 +98,14 @@ main {
 .footer {
   padding: 3rem 1.5rem;
   background-color: #fafafa;
+  margin-top: auto; /* Push to bottom */
 }
 
 /* Make sure images don't overflow their containers */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Links */
@@ -67,21 +122,6 @@ a:hover {
 h1, h2, h3 {
   color: var(--stanford-cardinal);
   font-family: var(--main-font);
-}
-
-/* Profile picture styling */
-.profile-pic {
-  border: 3px solid var(--stanford-cardinal);
-  max-width: 256px;
-  margin: 0 auto;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Button styling */
@@ -126,18 +166,6 @@ h1, h2, h3 {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .column.is-one-quarter {
-    text-align: center;
-  }
-  
-  .profile-pic {
-    max-width: 200px;
-    margin: 0 auto 2rem auto;
-  }
-}
-
 /* Stanford-specific styling */
 .stanford-bg {
   background-color: var(--stanford-cardinal);
@@ -153,4 +181,85 @@ h1, h2, h3 {
 /* Font overrides for Bulma elements */
 .navbar-item, .button, p, li, .content, .subtitle {
   font-family: var(--main-font);
+}
+
+/* Responsive adjustments with stable ratios */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+  
+  .column.is-one-third {
+    order: -1; /* Move profile pic to top on mobile */
+    text-align: center;
+    min-width: auto;
+  }
+  
+  .profile-pic {
+    max-width: 200px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .title.is-1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .bio-content {
+    text-align: left;
+  }
+  
+  .links-section {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  /* Hide profile picture on very narrow screens */
+  .column.is-one-third {
+    display: none;
+  }
+  
+  .title.is-1 {
+    font-size: 1.75rem;
+  }
+  
+  .simple-link {
+    display: block;
+    margin: 0.5rem auto;
+    width: fit-content;
+  }
+}
+
+/* Prevent layout shift during loading */
+.profile-container {
+  min-height: 400px;
+}
+
+/* Ensure consistent spacing */
+* {
+  box-sizing: border-box;
+}
+
+/* Stable viewport units */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  width: 100%;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease;
 } 
