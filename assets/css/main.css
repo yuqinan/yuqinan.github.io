@@ -225,30 +225,59 @@ h1, h2, h3 {
     padding: 0 0.75rem;
   }
   
-  /* Hide profile picture on very narrow screens */
-  .profile-pic {
-    display: none;
+  /* Force columns to stack and hide image column */
+  .columns {
+    flex-direction: column !important;
+    display: block !important;
   }
   
-  /* Ensure text content takes full width */
+  /* Force hide the entire image column */
+  .column.is-one-third,
+  .column.is-one-third .image,
+  .column.is-one-third .profile-pic {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Ensure text content column takes full width and is visible */
   .column.is-two-thirds {
-    flex: 1;
-    width: 100%;
+    flex: none !important;
+    width: 100% !important;
+    display: block !important;
+    visibility: visible !important;
+    order: 1 !important;
   }
   
-  .column.is-one-third {
-    display: none;
+  /* Make sure all text content is visible */
+  .bio-content,
+  .links-section,
+  .news-section {
+    display: block !important;
+    visibility: visible !important;
   }
   
   .title.is-1 {
     font-size: 1.75rem;
     text-align: center;
+    display: block !important;
+    visibility: visible !important;
   }
   
   .simple-link {
     display: block;
     margin: 0.5rem auto;
     width: fit-content;
+  }
+  
+  /* Ensure the main container is visible */
+  .main-content {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  /* Override any conflicting styles */
+  .profile-container {
+    display: block !important;
   }
 }
 
