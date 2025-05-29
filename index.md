@@ -12,7 +12,7 @@ layout: default
         <div class="columns">
           <div class="column is-two-thirds">
             <div class="bio-content mb-5">
-              <p class="mb-3">I am a first-year student in Computer Science at Stanford University. 
+              <p class="mb-3">I am a first-year PhD student in Computer Science at Stanford University. 
                Currently, I am rotating with Professor <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a> and Professor <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>. My Ph.D. is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a></p>
               
               <p class="mb-3">Before Stanford, I received a concurrent B.S. in Math-CS and M.A. in CS from Brown University where I was fortunate to be advised by Professor <a href="https://cs.brown.edu/people/epavlick/" target="_blank" rel="noopener noreferrer">Ellie Pavlick</a>.</p>
