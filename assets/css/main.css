@@ -221,63 +221,30 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 480px) {
+  /* Hide the entire profile container and show content differently */
+  .profile-container {
+    display: none !important;
+  }
+  
+  /* Create a mobile-only layout */
+  .home .main-content {
+    padding: 1rem;
+  }
+  
   .container {
     padding: 0 0.75rem;
-  }
-  
-  /* Force columns to stack and hide image column */
-  .columns {
-    flex-direction: column !important;
-    display: block !important;
-  }
-  
-  /* Force hide the entire image column */
-  .column.is-one-third,
-  .column.is-one-third .image,
-  .column.is-one-third .profile-pic {
-    display: none !important;
-    visibility: hidden !important;
-  }
-  
-  /* Ensure text content column takes full width and is visible */
-  .column.is-two-thirds {
-    flex: none !important;
-    width: 100% !important;
-    display: block !important;
-    visibility: visible !important;
-    order: 1 !important;
-  }
-  
-  /* Make sure all text content is visible */
-  .bio-content,
-  .links-section,
-  .news-section {
-    display: block !important;
-    visibility: visible !important;
   }
   
   .title.is-1 {
     font-size: 1.75rem;
     text-align: center;
-    display: block !important;
-    visibility: visible !important;
+    margin-bottom: 2rem;
   }
   
   .simple-link {
     display: block;
     margin: 0.5rem auto;
     width: fit-content;
-  }
-  
-  /* Ensure the main container is visible */
-  .main-content {
-    display: block !important;
-    visibility: visible !important;
-  }
-  
-  /* Override any conflicting styles */
-  .profile-container {
-    display: block !important;
   }
 }
 

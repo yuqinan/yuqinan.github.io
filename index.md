@@ -4,9 +4,10 @@ layout: default
 
 <div class="home">
   <section class="main-content">
-    <div class="container is-max-desktop px-5">
+    <div class="container">
       <h1 class="title is-1 mt-6 mb-4">Qinan Yu <span style="font-size: 0.4em; font-family: '仿宋', FangSong, STFangsong, serif;">喻启楠</span></h1>
       
+      <!-- Desktop/tablet layout with image -->
       <div class="profile-container">
         <div class="columns">
           <div class="column is-two-thirds">
@@ -29,9 +30,29 @@ layout: default
           </div>
           
           <div class="column is-one-third">
-            <figure class="image is-square mb-3">
+            <figure class="image">
               <img class="profile-pic" src="assets/images/qinan.jpg" alt="Qinan Yu profile photo">
             </figure>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile-only content (hidden on desktop) -->
+      <div class="mobile-bio-content" style="display: none;">
+        <div class="bio-content mb-5">
+          <p class="mb-3">I am a first-year student in Computer Science at Stanford University. 
+           Currently, I am rotating with Professor <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a> and Professor <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>. My Ph.D. is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a></p>
+          
+          <p class="mb-3">Before Stanford, I received a concurrent B.S. in Math-CS and M.A. in CS from Brown University where I was fortunate to be advised by Professor <a href="https://cs.brown.edu/people/epavlick/" target="_blank" rel="noopener noreferrer">Ellie Pavlick</a>.</p>
+          
+          <p class="mb-5">My research focuses on Natural Language Processing, specifically in interpretability and trustworthyness of language models. 
+          I'm interested in understanding how language models work internally and improving their capabilities.</p>
+          
+          <div class="links-section">
+            <a href="mailto:qinanyu@stanford.edu" class="simple-link">email</a>
+            <a href="https://github.com/yuqinan" target="_blank" rel="noopener noreferrer" class="simple-link">github</a>
+            <a href="https://scholar.google.com/citations?user=ZzQoxXcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="simple-link">google scholar</a>
+            <a href="https://x.com/qinan_yu" target="_blank" rel="noopener noreferrer" class="simple-link">twitter</a>
           </div>
         </div>
       </div>
@@ -59,25 +80,6 @@ layout: default
 </div>
 
 <style>
-  .main-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 0 4rem;
-  }
-  
-  .profile-pic {
-    border-radius: 5px;
-    max-width: 100%;
-  }
-  
-  .bio-content {
-    line-height: 1.7;
-  }
-  
-  .links-section {
-    margin-top: 2rem;
-  }
-  
   .simple-link {
     display: inline-block;
     margin-right: 1rem;
@@ -110,9 +112,25 @@ layout: default
     min-width: 120px;
     color: #555;
     padding-right: 1rem;
+    flex-shrink: 0;
   }
   
   .news-content {
     flex: 1;
+  }
+  
+  .bio-content {
+    line-height: 1.7;
+  }
+  
+  .links-section {
+    margin-top: 2rem;
+  }
+  
+  /* Show mobile content only on mobile */
+  @media screen and (max-width: 480px) {
+    .mobile-bio-content {
+      display: block !important;
+    }
   }
 </style> 
