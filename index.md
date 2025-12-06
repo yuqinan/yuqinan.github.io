@@ -15,8 +15,7 @@ layout: default
               <p class="mb-3">Hi! I am qinan, a second-year CS Ph.D. student at Stanford. 
                I am advised by <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a> and <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>. My Ph.D. is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a>.</p>
 
-              <p class="mb-5">My research focuses on Natural Language Processing, specifically in interpretability and trustworthiness of language models. 
-              I'm interested in understanding and breaking down how language models reason and improving their capabilities through guided reasnoing and reliability through building a better explanation of the reasoning process.</p>
+              <p class="mb-5">My research focuses on Natural Language Processing, specifically on the interpretability and trustworthiness of language models. I am interested in understanding and decomposing how language models reason, and in improving their capabilities through guided reasoning and enhanced reliability by building better explanations of their reasoning processes.</p>
               
               <p class="mb-3">Before Stanford, I received a concurrent B.S. in Math-CS and M.A. in CS from Brown where I was fortunate to be advised by <a href="https://cs.brown.edu/people/epavlick/" target="_blank" rel="noopener noreferrer">Ellie Pavlick</a>.</p>
           
