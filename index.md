@@ -55,13 +55,27 @@ layout: default
       <!-- Mobile-only content (hidden on desktop) -->
       <div class="mobile-bio-content" style="display: none;">
         <div class="bio-content mb-5">
-          <p class="mb-3">Hi! I am qinan, a first-year CS Ph.D. student at Stanford. 
-           Currently, I am rotating with <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a> and <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>. My Ph.D. is generously supported by <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a></p>
+          <p class="mb-3">
+            Hi! I am Qinan, a second-year CS Ph.D. student at Stanford.
+            I am advised by
+            <a href="https://stanford.edu/~cgpotts/" target="_blank" rel="noopener noreferrer">Chris Potts</a>
+            and
+            <a href="https://guestrin.su.domains/" target="_blank" rel="noopener noreferrer">Carlos Guestrin</a>.
+            My Ph.D. is generously supported by the
+            <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noopener noreferrer">Stanford Graduate Fellowship</a>.
+          </p>
 
-          <p class="mb-5">My research focuses on Natural Language Processing, specifically in interpretability and trustworthiness of language models. 
-          I'm interested in understanding how language models work internally and improving their capabilities and reliability.</p>
-          
-          <p class="mb-3">Before Stanford, I received a concurrent B.S. in Math-CS and M.A. in CS from Brown where I was fortunate to be advised by <a href="https://cs.brown.edu/people/epavlick/" target="_blank" rel="noopener noreferrer">Ellie Pavlick</a>.</p>
+          <p class="mb-5">
+            My research focuses on interpretability and trustworthiness.
+            I am interested in understanding, explaining, and controlling models’ reasoning processes.
+            I aim to build reliable and faithful explanations of how models reason to help humans make decisions and learn from these models.
+            Moreover, I am excited to design faithful, reliable, and scalable interpretability methods for real-world applications.
+          </p>
+
+          <p class="mb-3">
+            Before Stanford, I received a concurrent B.S. in Math-CS and M.A. in CS from Brown, where I was fortunate to be advised by
+            <a href="https://cs.brown.edu/people/epavlick/" target="_blank" rel="noopener noreferrer">Ellie Pavlick</a>.
+          </p>
           
           <div class="links-section">
             <a href="mailto:qinanyu@stanford.edu" class="simple-link">email</a>

@@ -5,6 +5,23 @@ permalink: /publications/
 ---
 
 <div class="publications-container">
+  <a href="https://arxiv.org/abs/2604.22074" class="publication-box-link" target="_blank" rel="noopener noreferrer">
+    <div class="publication-item">
+      <div class="publication-title">
+        <span class="paper-link">Outcome Rewards Do Not Guarantee Verifiable or Causally Important Reasoning</span>
+      </div>
+      <div class="publication-authors">
+        <span class="author-highlight">Qinan Yu</span>, Alexa Tartaglini, Peter Hase, Carlos Guestrin, Christopher Potts
+      </div>
+      <div class="publication-venue">
+        ICML 2026
+      </div>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2604.22074" class="button is-small is-outlined is-link" onclick="event.stopPropagation();" target="_blank" rel="noopener noreferrer">PAPER</a>
+      </div>
+    </div>
+  </a>
+
   <a href="https://arxiv.org/abs/2505.20809" class="publication-box-link" target="_blank" rel="noopener noreferrer">
     <div class="publication-item">
       <div class="publication-title">
@@ -14,7 +31,7 @@ permalink: /publications/
         Zhengxuan Wu*, <span class="author-highlight">Qinan Yu*</span>, Aryaman Arora, Christopher D. Manning, Christopher Potts
       </div>
       <div class="publication-venue">
-        preprint
+        Neurips 2025 (Spotlight)
       </div>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2505.20809" class="button is-small is-outlined is-link" onclick="event.stopPropagation();" target="_blank" rel="noopener noreferrer">PAPER</a>
